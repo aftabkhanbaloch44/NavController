@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tab1Fragment">
+
+    <fragment
+        android:id="@+id/tab1Fragment"
+        android:name="com.aftab.navcontroller.fragments.Tab1Fragment"
+        android:label="Tab 1" >
+        <action
+            android:id="@+id/action_tab1Fragment_to_tab2Fragment"
+            app:destination="@id/tab2Fragment" >
+            <argument
+                android:name="message"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/tab2Fragment"
+        android:name="com.aftab.navcontroller.fragments.Tab2Fragment"
+        android:label="Tab 2" >
+        <action
+            android:id="@+id/action_tab2Fragment_to_tab3Fragment"
+            app:destination="@id/tab3Fragment">
+            <argument
+                android:name="message"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/tab3Fragment"
+        android:name="com.aftab.navcontroller.fragments.Tab3Fragment"
+        android:label="Tab 3" >
+        <action
+            android:id="@+id/action_tab3Fragment_to_tab1Fragment"
+            app:destination="@id/tab1Fragment">
+            <argument
+                android:name="message"
+                app:argType="string" />
+        </action>
+    </fragment>
+</navigation>

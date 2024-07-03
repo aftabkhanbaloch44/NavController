@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tab1HostFragment">
+
+    <fragment
+        android:id="@+id/tab1HostFragment"
+        android:name="com.aftab.navcontroller.host_fragments.Tab1HostFragment"
+        android:label="Tab 1" />
+
+    <fragment
+        android:id="@+id/tab2HostFragment"
+        android:name="com.aftab.navcontroller.host_fragments.Tab2HostFragment"
+        android:label="Tab 2" />
+
+    <fragment
+        android:id="@+id/tab3HostFragment"
+        android:name="com.aftab.navcontroller.host_fragments.Tab3HostFragment"
+        android:label="Tab 3" />
+
+</navigation>
